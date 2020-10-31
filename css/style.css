@@ -86,6 +86,54 @@ p {
     margin-bottom: 15px;
 }
 
+/* SIDEBAR */
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 230px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: -230px;
+    background-color: #1F0E04;
+    padding-top: 80px; /* Place content 60px from the top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar a {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 6px 6px 6px 15px;
+    margin-bottom: 15px;
+    transition: color .5s;
+}
+
+.sidebar a:hover {
+    color: #ecbda0;
+    transition: color .5s;
+}
+
+.sidebar .closebtn {
+    font-size: 3.5rem;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.open-sidebar {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 /* NAVBAR */
 
 .icon-nav {
@@ -357,10 +405,17 @@ footer h4 {
     margin: 0 auto;
 }
 
-.footer-social i {
+.footer-social a {
     font-size: 3rem;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #fff;
+    transition: all .5s;
+}
+
+.footer-social a:hover {
+    color: #A25929;
+    transition: all .5s;
 }
 
 .footer-contact {
