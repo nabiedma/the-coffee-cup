@@ -9,11 +9,11 @@
 
 .container {
     margin: 0 auto;
-    max-width: 85%;
+    max-width: 80%;
 }
 
 section {
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 60px;
 }
 
@@ -61,6 +61,14 @@ p {
 
 .mb-20 {
     margin-bottom: 20px !important;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
 }
 
 .btn {
@@ -174,6 +182,25 @@ nav {
     width: auto;
 }
 
+.main-nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: color .5s;
+}
+
+.main-nav ul li a:hover {
+    color: #ecbda0;
+    transition: color .5s;
+}
+
 /* ///////////// */
 
 /* HEADER */
@@ -245,21 +272,28 @@ section.s-op {
 }
 
 .product-info:nth-of-type(2) {
+    position: relative;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./../img/product-1.jpg) !important;
     background-size: cover;
     background-position: center;
+    background-size: 100%;
+    transition: all .5s;
 }
 
 .product-info:nth-of-type(3) {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./../img/product-2.jpg) !important;
     background-size: cover;
     background-position: center;
+    background-size: 100%;
+    transition: all .5s;
 }
 
 .product-info:nth-of-type(4) {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./../img/product-3.jpg) !important;
     background-size: cover;
     background-position: center;
+    background-size: 100%;
+    transition: all .5s;
 }
 
 /* ///////////// */
@@ -414,7 +448,7 @@ footer h4 {
 }
 
 .footer-social a:hover {
-    color: #A25929;
+    color: #ecbda0;
     transition: all .5s;
 }
 
@@ -445,6 +479,11 @@ footer h4 {
     font-size: 1rem;
 }
 
+.footer-info ul li a:hover {
+    color: #ecbda0;
+    transition: all .5s;
+}
+
 .footer-copyright {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -463,4 +502,58 @@ footer h4 {
     margin-top: 10px;
 }
 
+/* ///////////// */
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 998px) {
+    .open-sidebar {
+        display: none;
+    } 
+
+    /* WHO WE ARE */
+
+    .who-pictures img {
+        height: 400px;
+        width: auto;
+    }
+
+    /* //////// */
+
+    /* OUR PRODUCTS */
+
+    .product-info {
+        width: 100%;
+        text-align: center;
+        height: 500px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+    }
+
+    .product-info:hover {
+        background-size: 115%;
+        transition: all .5s;
+    }
+
+    .product-info h3 {
+        margin-top: 30px;
+        width: 50%;
+        text-align: center;
+    }
+
+    /* //////// */
+}
+
+@media only screen and (max-width: 998px) {
+    .main-nav {
+        display: none;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 85%;
+    }
+}
 /* ///////////// */
